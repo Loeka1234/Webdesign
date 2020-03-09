@@ -2,11 +2,12 @@
     margin: 0px;
     padding: 0px;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Poppins', sans-serif;
 }
-
 header {
     display: flex;
     width: 95%;
@@ -47,4 +48,110 @@ nav {
 .login {
     flex: 1;
     justify-content: flex-end;
+}
+
+.programmer, .skateboarding {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+.skateboarding {
+    margin-top: 10%;
+}
+.introduction {
+    flex: 1;
+}
+.introduction:nth-child(2) {
+    margin-left: 50px;
+}
+.intro-text h1{
+    font-size: 44px;
+    font-weight: 500;
+    /* Gradient text */
+    background: linear-gradient(to right, #494969, rgb(130, 130, 160));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.intro-text p {
+    margin-top: 0px;
+    font-size: 22px;
+    color: #585772;
+}
+.cover {
+    flex: 1;
+}
+.cover img {
+    height: 60vh;
+    filter: drop-shadow(0 5px 3px black);
+    animation: drop 1.5s ease;
+}
+
+.background-image {
+    position: absolute;
+    top: -15%;
+    left: -5%;
+    z-index: -1;
+    height: 150%;
+    width: auto;
+    opacity: .05;
+    transform: rotate(160deg);
+    overflow-x: none;
+}
+
+@keyframes drop {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* responsive design moet nog beter worden gemaakt */
+@media screen and (max-width: 1250px) {
+    .cover img {
+        height: 40vh;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .skateboarding, .programmer {
+        flex-direction: column;
+    }
+    .introduction {
+        flex: 1;
+        margin-top: 5vh;
+        text-align: center;
+    }
+    .introduction:first-child {
+        justify-content: flex-end;
+    }
+    .introduction:nth-child(2) {
+        margin: 0;
+        justify-content: flex-start;
+    }
+    .cover:first-child {
+        justify-content: flex-end;
+    }
+    .cover:nth-child(2) {
+        justify-content: flex-start;
+    }
+    .cover, .introduction {
+        display: flex;
+        flex-direction: column;
+    }
+    .cover {
+        flex: 1;
+    }
+    .cover img {
+        width: 100%;
+        height: auto;
+    }
+    .background-image {
+        overflow-x: hidden;
+    }
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +8,17 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet">
     <title>Loeka's webpage</title>
 </head>
+
 <body>
     <header>
         <div class="logo-container">
-            <img src="img/logo.svg" alt="logo" height="50" width="50">
+            <img src="img/logo.svg" alt="logo" height="50" width="50" id="logo-image">
             <h4 class="logo">Loeka Lievens</h4>
         </div>
         <nav>
             <ul class="nav-links">
-                <li><a class="nav-link" href="#">Home</a></li>
-                <li><a class="nav-link" href="#">About me</a></li>
+                <li><a class="nav-link" href="#programmer">Home</a></li>
+                <li><a class="nav-link" href="#skateboarding">About me</a></li>
                 <li><a class="nav-link" href="#">Contact</a></li>
             </ul>
         </nav>
@@ -25,5 +27,34 @@
             <!-- <object data="./img/login.svg" type="image/svg+xml" height="30px" width="30px" class="logo-icon"></object> -->
         </div>
     </header>
+
+    <main>
+        <section id="programmer" class="programmer">
+            <div class="introduction">
+                <div class="intro-text">
+                    <h1>Loeka Lievens</h1>
+                    <p>Beginning programmer!</p>
+                </div>
+            </div>
+            <div class="cover">
+                <img src="./img/laptop_transparent.png" alt="image">
+            </div>
+        </section>
+
+        <section id="skateboarding" class="skateboarding">
+            <div class="cover">
+                <img src="img/skateboarder.jpg" alt="skateboarder">
+            </div>
+            <div class="introduction right">
+                <div class="intro-text">
+                    <h1>Skateboarding</h1>
+                    <p>I really like skateboarding!</p>
+                </div>
+            </div>
+        </section>
+        <!-- Background -->
+        <!-- <img class="background-image" src="./img/background_trucks.png" alt="background"> -->
+    </main>
 </body>
+
 </html>
