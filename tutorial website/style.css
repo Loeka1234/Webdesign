@@ -9,13 +9,13 @@ body {
 
 header {
     display: flex;
-    width: 90%;
+    width: 95%;
     height: 10vh;
     margin: auto;
     align-items: center;
 }
 
-.logo-container, .nav-links, .cart {
+.logo-container, .nav-links, .login {
     display: flex;
     align-items: center;
 }
@@ -44,7 +44,7 @@ nav {
    color: lightgreen;
    border-bottom: 1px solid lightgreen;
 }
-.cart {
+.login {
     flex: 1;
     justify-content: flex-end;
 }
