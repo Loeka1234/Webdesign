@@ -121,6 +121,7 @@ nav {
 @media screen and (max-width: 1024px) {
     .skateboarding, .programmer {
         flex-direction: column;
+        margin-top: -10%;
     }
     .introduction {
         flex: 1;
