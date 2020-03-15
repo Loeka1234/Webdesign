@@ -156,3 +156,36 @@ nav {
         overflow-x: hidden;
     }
 }
+
+
+
+
+.loader {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.loader h1 {
+    font-size: 44px;
+    font-weight: 500;
+    /* Gradient text */
+    background: linear-gradient(to right, #9393ff 20%, #8686f0 40%, #8686f0 60%, #9393ff 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 1s linear infinite;
+    background-size: 200% auto;
+}
+.loader p {
+    color: #585772;
+}
+
+@keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+}
