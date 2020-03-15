@@ -26,21 +26,20 @@
             <ul class="nav-links">
                 <li><a class="nav-link" href="#programmer">Home</a></li>
                 <li><a class="nav-link" href="#skateboarding">About me</a></li>
-                <li><a class="nav-link" href="#">Contact</a></li>
+                <li><a class="nav-link" href="#projects">Projects</a></li>
             </ul>
         </nav>
         <div class="login">
             <img src="img/login.svg" alt="" height="30" width="30">
-            <!-- <object data="./img/login.svg" type="image/svg+xml" height="30px" width="30px" class="logo-icon"></object> -->
         </div>
     </header>
 
     <main>
-        <section id="programmer" class="programmer">
+        <section id="programmer">
             <div class="introduction">
                 <div class="intro-text">
                     <h1>Loeka Lievens</h1>
-                    <p>Beginning programmer!</p>
+                    <span id="text"></span>
                 </div>
             </div>
             <div class="cover">
@@ -48,7 +47,7 @@
             </div>
         </section>
 
-        <section id="skateboarding" class="skateboarding">
+        <section id="skateboarding">
             <div class="cover">
                 <img src="img/skateboarder.jpg" alt="skateboarder">
             </div>
@@ -59,9 +58,22 @@
                 </div>
             </div>
         </section>
+
+        <section id="projects">
+            <div class="introduction">
+                <div class="intro-text">
+                    <h1>My projects</h1>
+                    <p>Take a look at my projects <a href="https://github.com/Loeka1234" target="_blank">here</a>!</p>
+                </div>
+            </div>
+            <div class="cover">
+                <img src="img/github.png" alt="github image">
+            </div>
+        </section>
         <!-- Background -->
         <!-- <img class="background-image" src="./img/background_trucks.png" alt="background"> -->
     </main>
+    <script src="scripts/texttyper.js"></script>
 </body>
 
 </html>

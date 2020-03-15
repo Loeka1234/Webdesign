@@ -1,5 +1,8 @@
 /// <reference types="jquery" />
 // Above is for jquery intellisense
+
+var visible;
 $(document).ready(function() {
-    $(".loader").slideUp(1000);
+    $(this).scrollTop(0)
+    $(".loader").slideUp(1500);
 });
